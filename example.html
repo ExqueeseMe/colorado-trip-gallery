@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorado Nights</title>
+    <style>
+        body {
+            background-color: #382e25; /* Dark wood color */
+            color: #f5f5f5; /* Warm off-white for text */
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: linear-gradient(to right, #ffaf40, #ffc966); /* Warm orange-yellow gradient */
+            padding: 2em 1em;
+            border-bottom: 5px solid #6b4f3a; /* Darker wood accent */
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #382e25; /* Dark text for contrast */
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+            color: #544435;
+            font-style: italic;
+        }
+        nav {
+            background-color: #4a3c2f;
+            padding: 1em 0;
+            margin-bottom: 2em;
+        }
+        nav a {
+            color: #ffc966;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #fff;
+        }
+        h2 {
+            color: #ffc966; /* Warm yellow for headings */
+            font-size: 2em;
+            border-bottom: 2px solid #6b4f3a;
+            padding-bottom: 10px;
+            margin-bottom: 1em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between photos */
+            margin-bottom: 3em;
+        }
+        .photo {
+            background-color: #f5f5f5;
+            border: 8px solid #6b4f3a; /* Wood frame effect */
+            padding: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .photo img {
+            width: 250px;
+            height: 200px;
+            display: block;
+        }
+        .photo p {
+            color: #333;
+            margin: 5px 0 0 0;
+            font-size: 0.9em;
+        }
+        footer {
+            margin-top: 2em;
+            padding: 1em 0;
+            background-color: #4a3c2f;
+            color: #ffc966;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Colorado Nights</h1>
+        <p>A Photographic Journey Through a Winter Wonderland</p>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="#landscapes">Snowy Landscapes</a>
+            <a href="#vistas">Rocky Vistas</a>
+            <a href="#friends">Family & Friends</a>
+        </nav>
+
+        <section id="landscapes">
+            <h2>Snowy Landscapes</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="https://via.placeholder.com/250x200/cccccc/000000?text=Snowy+Mountain" alt="Snowy Mountain">
+                    <p>Snow-covered range</p>
+                </div>
+                <div class="photo">
+                    <img src="https://via.placeholder.com/250x200/cccccc/000000?text=Icy+Forest" alt="Icy Forest">
+                    <p>Forest with snow-laden trees</p>
+                </div>
+                <div class="photo">
+                    <img src="https://via.placeholder.com/250x200/cccccc/000000?text=Frozen+Lake" alt="Frozen Lake">
+                    <p>A calm frozen lake</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vistas">
+            <h2>Rocky Vistas</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="https://via.placeholder.com/250x200/cccccc/000000?text=Rock+Formation" alt="Rock Formation">
+                     <p>Towering rock formation</p>
+                </div>
+                <div class="photo">
+                    <img src="https://via.placeholder.com/250x200/cccccc/000000?text=Canyon+View" alt="Canyon View">
+                    <p>Stunning canyon overlook</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="friends">
+            <h2>Family & Friends</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="https://via.placeholder.com/250x200/cccccc/000000?text=Group+Photo" alt="Group Photo">
+                    <p>Group shot on the slopes</p>
+                </div>
+                <div class="photo">
+                    <img src="https://via.placeholder.com/250x200/cccccc/000000?text=Cabin+Portrait" alt="Cabin Portrait">
+                    <p>Cozy by the fire</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; Your Name 2025</p>
+    </footer>
+
+</body>
+</html>
