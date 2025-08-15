@@ -2,16 +2,39 @@ body {
     font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #F5F2EA;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
     font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4A2E26;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #4A2E26;
     margin-bottom: 1rem;
 }
 
 p {
     font-size: 1.2rem;
     line-height: 1.6;
+    color: #312F2D;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #F5F2EA;
+    margin-top: 2rem;
+    border-top: #4A2E26 1px solid;
 }
 
 .hero {
@@ -23,7 +46,6 @@ p {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: white;
 }
 
 .hero::before {
@@ -32,9 +54,17 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 40rem;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
+}
+
+.hero-header {
+    max-width: 40rem;
+
+}
+
+.hero-header h1, .hero-header p {
+    color: #F5F2EA;
 }
 
 .hero-nav {
@@ -47,10 +77,18 @@ p {
     z-index: 2;
 }
 
+.travel-tips {
+    background-color: #EDE6DB;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
 .nav-link {
     text-decoration: none;
     padding: 0.5rem 1rem;
-    color: white;
+    color: #F5F2EA;
+    font-weight: bold;
 }
 
 .nav-list {
@@ -59,4 +97,95 @@ p {
     margin: 0;
     display: flex;
     gap: 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.gallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-card {
+    background-color: #4A2E26;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.gallery-card h2, .gallery-card p {
+    color: #F5F2EA;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery-grid img {
+    width: 25rem;
+    height: 15rem;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.imgcenter {
+    object-position: 0rem -3rem !important;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 30rem;
+    }
+
+    .hero-header {
+        padding: 0 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .hero::before {
+        height: 30rem;
+    }
+
+    .hero-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-nav {
+        margin-bottom: 1rem;
+        background-color: #312F2D80;
+        border-radius: 5px;
+    }
+
+    .gallery-grid img {
+        width: 100%;
+    }
+
+    .imgcenter {
+        object-position: center !important;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
 }
