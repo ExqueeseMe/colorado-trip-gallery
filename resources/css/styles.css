@@ -77,6 +77,24 @@ footer {
     z-index: 2;
 }
 
+.btn {
+    width: 7rem;
+    height: 2.25rem;
+    border: 1px solid #D8734B;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #D8734B;
+    color: white;
+    margin-top: 1.5rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #db9f87;
+    border-color: #db9f87;
+}
+
 .travel-tips {
     background-color: #EDE6DB;
     padding: 1rem;
